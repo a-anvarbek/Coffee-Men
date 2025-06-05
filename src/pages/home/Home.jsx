@@ -1,16 +1,32 @@
 import styled from "styled-components";
 
+import BG from "../../image/Home.jpg";
 
 const Wrapper = styled.div`
-    
-`
+  width: 100%;
+  height: 100vh;
+  background-image: url(${BG});
+  background-color: #666464;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+`;
+
+const Title = styled.p`
+  color: #ffbf00;
+  font-size: 166px;
+  width: calc(100% - 20%);
+  margin: auto;
+`;
 
 const Home = () => {
-    return(
-        <Wrapper>
-            <h1>1546</h1>
-        </Wrapper>
-    );
-}
+  return (
+    <Wrapper>
+      <Title>HARVESTER COFFEE CO.</Title>
+    </Wrapper>
+  );
+};
 
 export default Home;

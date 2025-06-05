@@ -15,7 +15,6 @@ const Container = styled.div`
   margin: auto;
   display: flex;
   align-items: center;
-  /* background-color: red; */
   color: #aaa;
 `;
 
@@ -82,9 +81,13 @@ const Footer = () => {
             </P>
           </Contact>
 
-          <P style={{
-            marginTop: "50px",
-          }}>&copy; 2025 a-anvarbek. Cooffee Men</P>
+          <P
+            style={{
+              marginTop: "50px",
+            }}
+          >
+            &copy; 2025 a-anvarbek. Cooffee Men
+          </P>
         </Div>
 
         <Div>
