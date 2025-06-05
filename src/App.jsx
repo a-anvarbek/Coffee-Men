@@ -1,23 +1,25 @@
-import styled from 'styled-components'
-import './App.css'
+import { useState } from "react";
+import { BrowserRouter } from "react-router";
+import styled from "styled-components";
 
-import Home from './pages/home/Home'
-import { useState } from 'react'
-import MainRoutes from './pages/routes/MainRouter'
-import Header from './components/Header'
+import MainRoutes from "./pages/routes/MainRouter";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-const Wrapper = styled.div`
-  
-`
+import "./App.css";
+
+const Wrapper = styled.div``;
 
 function App() {
-  const {isAuthenticated, useRole} = useState
   return (
     <Wrapper>
-      <Header />
-      <MainRoutes />
+      <BrowserRouter>
+        <Header />
+        <MainRoutes />
+        <Footer />
+      </BrowserRouter>
     </Wrapper>
-  )
+  );
 }
 
-export default App
+export default App;
