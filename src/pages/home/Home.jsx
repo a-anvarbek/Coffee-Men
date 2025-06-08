@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import Products from "./Products";
+
 import BG from "../../image/Home.jpg";
 
 const Wrapper = styled.div`
@@ -23,9 +25,13 @@ const Title = styled.p`
 
 const Home = () => {
   return (
-    <Wrapper>
-      <Title>HARVESTER COFFEE CO.</Title>
-    </Wrapper>
+    <>
+      <Wrapper>
+        <Title>HARVESTER COFFEE CO.</Title>
+      </Wrapper>
+
+      <Products />
+    </>
   );
 };
 

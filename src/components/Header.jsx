@@ -60,7 +60,7 @@ const Header = () => {
   return (
     <Wrapper>
       <Container>
-        <Img src={logo} alt="" />
+        <Img onClick={() => navigate("/")} on src={logo} alt="" />
 
         <DivBtn>
           <Button onClick={() => navigate("/about-us")}>Products</Button>
