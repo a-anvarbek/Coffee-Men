@@ -18,7 +18,6 @@ const Container = styled.div`
   margin: auto;
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
 `;
 
 const Div1 = styled.div`
@@ -76,6 +75,7 @@ const Button = styled.button`
   border: none;
   font-size: 12px;
   font-weight: 700;
+  cursor: pointer;
 `;
 
 const ReadBtn = styled.button`
@@ -88,6 +88,7 @@ const ReadBtn = styled.button`
   align-items: center;
   justify-content: space-between;
   color: #fff;
+  cursor: pointer;
 `;
 
 const P = styled.p`

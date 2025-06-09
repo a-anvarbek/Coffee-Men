@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 import Products from "./Products";
-
-import BG from "../../image/Home.jpg";
 import AboutUs from "./AboutUs";
 import ProductDetail from "./ProductDetail";
+import ContactUs from "./ContactUs";
+
+import BG from "../../image/Home.jpg";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -37,6 +38,8 @@ const Home = () => {
       <AboutUs />
 
       <ProductDetail />
+
+      <ContactUs />
     </>
   );
 };
