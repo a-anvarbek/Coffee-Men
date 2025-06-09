@@ -10,6 +10,7 @@ const Container = styled.div`
   border-radius: 20px;
   position: relative;
   color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
 `;
 
 const Img = styled.img`
