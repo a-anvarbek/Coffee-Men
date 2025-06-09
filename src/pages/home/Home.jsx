@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Products from "./Products";
 
 import BG from "../../image/Home.jpg";
+import AboutUs from "./AboutUs";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -31,6 +32,8 @@ const Home = () => {
       </Wrapper>
 
       <Products />
+
+      <AboutUs />
     </>
   );
 };
