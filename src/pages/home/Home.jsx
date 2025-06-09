@@ -4,6 +4,7 @@ import Products from "./Products";
 
 import BG from "../../image/Home.jpg";
 import AboutUs from "./AboutUs";
+import ProductDetail from "./ProductDetail";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -34,6 +35,8 @@ const Home = () => {
       <Products />
 
       <AboutUs />
+
+      <ProductDetail />
     </>
   );
 };
