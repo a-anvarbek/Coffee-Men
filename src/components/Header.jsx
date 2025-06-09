@@ -27,7 +27,6 @@ const Img = styled.img`
   width: 64px;
   height: 53px;
 `;
-
 const Button = styled.button`
   font-size: 16px;
   padding: 5px 10px;
@@ -35,6 +34,32 @@ const Button = styled.button`
   border: none;
   background-color: transparent;
   color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: all 1s ease;
+    transform: translateX(-50%) scaleX(0);
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.4s ease;
+    transform-origin: center;
+  }
+
+  &:hover::after {
+    transform: translateX(-50%) scaleX(1);
+    background-color: #f6bd12;;
+  }
+  &:hover {
+    color: #f6bd12;
+    transition: all 0.4s ease;
+  }
 `;
 
 const DivBtn = styled.div`
