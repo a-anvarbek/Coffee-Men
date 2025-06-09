@@ -8,14 +8,14 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   width: 100%;
-  background-color: #000;
+  background-color: transparent;
   padding: 50px 0;
   height: 160px;
+  position: absolute;
 `;
 
 const Container = styled.div`
   width: calc(100% - 20%);
-  background-color: black;
   margin: auto;
   height: 60px;
   display: flex;
@@ -32,7 +32,7 @@ const Button = styled.button`
   padding: 5px 10px;
   margin-left: 15px;
   border: none;
-  background-color: #000;
+  background-color: transparent;
   color: #fff;
 `;
 
@@ -60,7 +60,7 @@ const Header = () => {
   return (
     <Wrapper>
       <Container>
-        <Img src={logo} alt="" />
+        <Img onClick={() => navigate("/")} on src={logo} alt="" />
 
         <DivBtn>
           <Button onClick={() => navigate("/about-us")}>Products</Button>
