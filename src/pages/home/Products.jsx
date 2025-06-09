@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 import Menu from "../../components/Menu";
+import BG from "../../image/Menu.png";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -70,14 +71,16 @@ const Products = () => {
               that you can see it and make an informed choice.
             </P>
 
-            <Button>Shop Now <FaLongArrowAltRight size={18}/></Button>
+            <Button onClick={() => navigate("/products")}>
+              Shop Now <FaLongArrowAltRight size={18} />
+            </Button>
           </Div>
         </Content>
 
         <MenuBox>
-          <Menu />
-          <Menu />
-          <Menu />
+          <Menu img={BG} showInfo={true} />
+          <Menu img={BG} showInfo={true} />
+          <Menu img={BG} showInfo={true} />
         </MenuBox>
       </Container>
     </Wrapper>
