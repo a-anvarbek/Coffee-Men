@@ -20,6 +20,7 @@ const Container = styled.div`
   height: 60px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;
 
 const Img = styled.img`
@@ -88,7 +89,7 @@ const Header = () => {
         <Img onClick={() => navigate("/")} on src={logo} alt="" />
 
         <DivBtn>
-          <Button onClick={() => navigate("/about-us")}>Products</Button>
+          <Button onClick={() => navigate("/products")}>Products</Button>
           <Button onClick={() => navigate("/about-us")}>Product Detail</Button>
           <Button onClick={() => navigate("/about-us")}>Contact Us</Button>
           <Button onClick={() => navigate("/about-us")}>About Us</Button>

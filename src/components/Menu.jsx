@@ -1,12 +1,10 @@
 import styled from "styled-components";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-import BG from "../image/Menu.png";
-
 const Container = styled.div`
   background-color: #000;
-  width: 303px;
-  height: 442px;
+  width: 265px;
+  height: 417px;
   border-radius: 20px;
   position: relative;
   color: #fff;
@@ -14,8 +12,8 @@ const Container = styled.div`
 `;
 
 const Img = styled.img`
-  width: 303px;
-  height: 278px;
+  width: 100%;
+  height: 240px;
   border-radius: 17px 17px 0 0;
 `;
 
@@ -76,13 +74,15 @@ const LeftBtn = styled.button`
   cursor: pointer;
 `;
 
-const Menu = () => {
+const Menu = (props, showInfo) => {
   return (
     <Container>
-      <Img src={BG} alt="" />
-      <Div>
-        <P>Varietal: Green Tip Gesha SCA Score: 89</P>
-      </Div>
+      <Img src={props.img} alt="" />
+      {showInfo && (
+        <Div>
+          <P>Varietal: Green Tip Gesha SCA Score: 89</P>
+        </Div>
+      )}
 
       <Case>
         <DivL>

@@ -4,7 +4,7 @@ import ROUTES from "./routes";
 // Import Pages
 import Home from "../home/Home";
 import About from "../aboutUS/About";
-// import Products from "./pages/Products";
+import HomeProducts from "../products/HomeProducts";
 // import ProductDetail from "./pages/ProductDetail";
 // import ContactUs from "./pages/ContactUs";
 // import AboutUs from "./pages/AboutUs";
@@ -17,6 +17,7 @@ const MainRoutes = () => {
       <Routes>
         <Route path={ROUTES.HOME} element={<Home />} />
         <Route path={ROUTES.ABOUT_US} element={<About />} />
+        <Route path={ROUTES.PRODUCTS} element={<HomeProducts />} />
         {/* <Route path={ROUTES.PRODUCTS} element={<Products />} />
         <Route path={ROUTES.PRODUCT_DETAIL} element={<ProductDetail />} />
         <Route path={ROUTES.CONTACT_US} element={<ContactUs />} />

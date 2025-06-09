@@ -63,7 +63,6 @@ const Img = styled.img`
 const ContainerBottom = styled.div`
   width: 466px;
   margin: auto;
-  /* background-color: green; */
   text-align: center;
 `;
 
@@ -71,10 +70,10 @@ const Input = styled.input`
   width: 70%;
   height: 50px;
   border-radius: 30px 0 0 30px;
-  border: 1px solid #BCBCBC;
+  border: 1px solid #bcbcbc;
   text-align: center;
   font-size: 18px;
-  color: #AFAFAF;
+  color: #afafaf;
 `;
 
 const SearchButton = styled.button`
@@ -87,9 +86,9 @@ const SearchButton = styled.button`
 `;
 
 const Div = styled.div`
-    display: flex;
-    align-items: center;
-`
+  display: flex;
+  align-items: center;
+`;
 
 const ContactUs = () => {
   return (
@@ -133,7 +132,7 @@ const ContactUs = () => {
           </P>
 
           <Div>
-            <Input type="text" placeholder="Enter your email address"/>
+            <Input type="text" placeholder="Enter your email address" />
             <SearchButton>Subscribe</SearchButton>
           </Div>
         </ContainerBottom>
