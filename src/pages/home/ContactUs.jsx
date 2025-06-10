@@ -53,6 +53,15 @@ const Button = styled.button`
   padding: 0 10px;
   font-weight: 700;
   margin-top: 132px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+  transition: all 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.08);
+    background-color: white;
+    color: #ffbf00;
+
+  }
 `;
 
 const Img = styled.img`
