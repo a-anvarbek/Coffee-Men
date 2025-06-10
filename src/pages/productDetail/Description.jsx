@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Menu from "../../components/Menu";
 
-import BG from "../../image/Menu.png"
+import BG from "../../image/Menu.png";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -61,13 +61,13 @@ const Box = styled.div`
 `;
 
 const DivL = styled.div`
-    width: 213px;
+  width: 213px;
 `;
 
 const DivR = styled.div`
-    width: calc(100% - 253px);
-    display: flex;
-    justify-content: space-between;
+  width: calc(100% - 253px);
+  display: flex;
+  justify-content: space-between;
 `;
 
 const Description = () => {
@@ -179,14 +179,14 @@ const Description = () => {
             </P>
 
             <P $fontSize="18px" $margin="20px 0">
-            Here are some other items we think you may like.
+              Here are some other items we think you may like.
             </P>
           </DivL>
 
           <DivR>
-            <Menu img={BG} showInfo={false}/>
-            <Menu img={BG} showInfo={false}/>
-            <Menu img={BG} showInfo={false}/>
+            <Menu img={BG} showInfo={false} />
+            <Menu img={BG} showInfo={false} />
+            <Menu img={BG} showInfo={false} />
           </DivR>
         </Box>
       </Container>
