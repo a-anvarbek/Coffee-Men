@@ -41,9 +41,17 @@ const DivBottom = styled.div`
 `
 
 const Img = styled.img`
-    width: 100%;
-    height: 100%;
-`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  transition: filter 0.4s ease;
+
+  &:hover {
+    filter: brightness(1);
+  }
+`;
+
 
 const ProductDetail = () => {
   return (
