@@ -90,7 +90,7 @@ const Header = () => {
 
         <DivBtn>
           <Button onClick={() => navigate("/products")}>Products</Button>
-          <Button onClick={() => navigate("/about-us")}>Product Detail</Button>
+          <Button onClick={() => navigate("/products-detail")}>Product Detail</Button>
           <Button onClick={() => navigate("/about-us")}>Contact Us</Button>
           <Button onClick={() => navigate("/about-us")}>About Us</Button>
         </DivBtn>

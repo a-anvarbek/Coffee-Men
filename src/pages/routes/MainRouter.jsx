@@ -5,7 +5,7 @@ import ROUTES from "./routes";
 import Home from "../home/Home";
 import About from "../aboutUS/About";
 import HomeProducts from "../products/HomeProducts";
-// import ProductDetail from "./pages/ProductDetail";
+import HomeProductDetail from "../productDetail/HomeProductDetail";
 // import ContactUs from "./pages/ContactUs";
 // import AboutUs from "./pages/AboutUs";
 // import Login from "./pages/Login";
@@ -14,17 +14,12 @@ import HomeProducts from "../products/HomeProducts";
 
 const MainRoutes = () => {
   return (
-      <Routes>
-        <Route path={ROUTES.HOME} element={<Home />} />
-        <Route path={ROUTES.ABOUT_US} element={<About />} />
-        <Route path={ROUTES.PRODUCTS} element={<HomeProducts />} />
-        {/* <Route path={ROUTES.PRODUCTS} element={<Products />} />
-        <Route path={ROUTES.PRODUCT_DETAIL} element={<ProductDetail />} />
-        <Route path={ROUTES.CONTACT_US} element={<ContactUs />} />
-        <Route path={ROUTES.LOGIN} element={<Login />} />
-        <Route path={ROUTES.SIGNUP} element={<Signup />} />
-        <Route path={ROUTES.NOT_FOUND} element={<NotFound />} /> */}
-      </Routes>
+    <Routes>
+      <Route path={ROUTES.HOME} element={<Home />} />
+      <Route path={ROUTES.ABOUT_US} element={<About />} />
+      <Route path={ROUTES.PRODUCTS} element={<HomeProducts />} />
+      <Route path={ROUTES.PRODUCT_DETAIL} element={<HomeProductDetail />} />
+    </Routes>
   );
 };
 
