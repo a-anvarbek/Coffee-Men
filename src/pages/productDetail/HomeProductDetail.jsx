@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 
 import BG from "../../image/Menu.png";
+import Description from "./Description";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -117,9 +118,7 @@ const HomeProductDetail = () => {
                 <RoundBtn onClick={() => setCount(count - 1)}>-</RoundBtn>
               </P>
 
-              <Button $border="2px soli">
-              Add to Cart
-              </Button>
+              <Button $border="2px soli">Add to Cart</Button>
 
               <Button $backgroundColor="#000" $color="#fff">
                 Buy it Now!
@@ -130,6 +129,8 @@ const HomeProductDetail = () => {
       </Section>
 
       <Wrapper $height="75px" />
+
+      <Description />
     </>
   );
 };
