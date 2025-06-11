@@ -111,12 +111,12 @@ const Icon = styled.button`
 
 const Header = () => {
   const navigate = useNavigate();
-  const [menuOpen, setMenuOpen] = useState();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <Wrapper>
       <Container>
-        <Img onClick={() => navigate("/")} on src={logo} alt="" />
+        <Img onClick={() => navigate("/")} src={logo} alt="logo" />
 
         <MenuToggle onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FiX /> : <FiMenu />}

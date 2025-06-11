@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useNavigate } from "react-router";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 import BG1 from "../../image/AboutUs1.jpg";
@@ -140,6 +141,8 @@ const P = styled.p`
 `;
 
 const AboutUs = () => {
+  const navigate = useNavigate();
+
   return (
     <Wrapper>
       <Container>
