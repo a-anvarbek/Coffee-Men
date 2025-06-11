@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
-import { FiSearch } from "react-icons/fi";
-import { FiShoppingBag } from "react-icons/fi";
+import { useState } from "react";
+import { FiMenu, FiSearch, FiShoppingBag, FiX } from "react-icons/fi";
 
 import logo from "../image/logo.png";
 
@@ -23,10 +23,28 @@ const Container = styled.div`
   cursor: pointer;
 `;
 
+const MenuToggle = styled.button`
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
 const Img = styled.img`
   width: 64px;
   height: 53px;
+
+  @media (max-width: 768px) {
+    margin-right: 20px;
+  }
 `;
+
 const Button = styled.button`
   font-size: 16px;
   padding: 5px 10px;
@@ -54,7 +72,7 @@ const Button = styled.button`
 
   &:hover::after {
     transform: translateX(-50%) scaleX(1);
-    background-color: #f6bd12;;
+    background-color: #f6bd12;
   }
   &:hover {
     color: #f6bd12;
@@ -63,7 +81,18 @@ const Button = styled.button`
 `;
 
 const DivBtn = styled.div`
-  width: 100%;
+  width: 100%;  
+  display: flex;
+  /* gap: 20px; */
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    display: ${({ open }) => (open ? "flex" : "none")};
+    background-color: transparent;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
 `;
 
 const Div = styled.div`
@@ -82,22 +111,28 @@ const Icon = styled.button`
 
 const Header = () => {
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState();
 
   return (
     <Wrapper>
       <Container>
         <Img onClick={() => navigate("/")} on src={logo} alt="" />
 
-        <DivBtn>
+        <MenuToggle onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <FiX /> : <FiMenu />}
+        </MenuToggle>
+
+        <DivBtn open={menuOpen}>
           <Button onClick={() => navigate("/products")}>Products</Button>
-          <Button onClick={() => navigate("/products-detail")}>Product Detail</Button>
-          {/* <Button onClick={() => navigate("/about-us")}>Contact Us</Button> */}
+          <Button onClick={() => navigate("/products-detail")}>
+            Product Detail
+          </Button>
           <Button onClick={() => navigate("/about-us")}>About Us</Button>
         </DivBtn>
 
         <Div>
           <Icon>
-            <FiSearch size={16}/>
+            <FiSearch size={16} />
           </Icon>
           <Icon>
             <FiShoppingBag size={16} />
