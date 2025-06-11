@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import BG1 from "../../image/ProductDetail1.jpg"
-import BG2 from "../../image/ProductDetail2.png"
-import BG3 from "../../image/ProductDetail3.jpg"
+import BG1 from "../../image/ProductDetail1.jpg";
+import BG2 from "../../image/ProductDetail2.png";
+import BG3 from "../../image/ProductDetail3.jpg";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -36,9 +36,9 @@ const P = styled.p`
 `;
 
 const DivBottom = styled.div`
-    width: 378px;
-    height: 332px;
-`
+  width: 378px;
+  height: 332px;
+`;
 
 const Img = styled.img`
   width: 100%;
@@ -51,7 +51,6 @@ const Img = styled.img`
     filter: brightness(1);
   }
 `;
-
 
 const ProductDetail = () => {
   return (
@@ -101,17 +100,17 @@ const ProductDetail = () => {
         </Div>
 
         <Div>
-            <DivBottom>
-                <Img src={BG1} alt="" />
-            </DivBottom>
+          <DivBottom>
+            <Img src={BG1} alt="" />
+          </DivBottom>
 
-            <DivBottom>
-                <Img src={BG2} alt="" />
-            </DivBottom>
-            
-            <DivBottom>
-                <Img src={BG3} alt="" />
-            </DivBottom>
+          <DivBottom>
+            <Img src={BG2} alt="" />
+          </DivBottom>
+
+          <DivBottom>
+            <Img src={BG3} alt="" />
+          </DivBottom>
         </Div>
       </Container>
     </Wrapper>

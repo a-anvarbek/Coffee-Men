@@ -11,6 +11,10 @@ const Wrapper = styled.div`
   background-color: #000;
   padding: 50px;
   color: #fff;
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 const Container = styled.div`
@@ -18,6 +22,11 @@ const Container = styled.div`
   margin: auto;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 `;
 
 const Div1 = styled.div`
@@ -29,11 +38,20 @@ const Div1 = styled.div`
   background-color: #9a8e8e;
   background-blend-mode: multiply;
   padding: 20px 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 8px 0;
+  }
 `;
 
 const Div2 = styled.div`
   width: 524px;
   height: 621px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const BGImg1 = styled.div`
@@ -46,6 +64,11 @@ const BGImg1 = styled.div`
   background-blend-mode: multiply;
   background-size: cover;
   margin-bottom: 35px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 8px 0;
+  }
 `;
 
 const BGImg2 = styled.div`
@@ -58,6 +81,11 @@ const BGImg2 = styled.div`
   background-blend-mode: multiply;
   background-size: cover;
   margin-bottom: 35px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 8px 0;
+  }
 `;
 
 const Content = styled.div`
@@ -66,6 +94,12 @@ const Content = styled.div`
   padding: 35px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+    width: 100%;
+    margin-top: -50px;
+  }
 `;
 
 const Button = styled.button`
@@ -82,7 +116,6 @@ const Button = styled.button`
     transform: scale(1.08);
     background-color: white;
     color: #ffbf00;
-
   }
 `;
 
@@ -136,6 +169,7 @@ const AboutUs = () => {
             </ReadBtn>
           </Content>
         </Div1>
+
         <Div2>
           <BGImg1>
             <Content>
