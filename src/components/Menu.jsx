@@ -9,6 +9,11 @@ const Container = styled.div`
   position: relative;
   color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.05);
+
+  }
 `;
 
 const Img = styled.img`

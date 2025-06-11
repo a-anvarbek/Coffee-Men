@@ -76,6 +76,14 @@ const Button = styled.button`
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.08);
+    background-color: white;
+    color: #ffbf00;
+
+  }
 `;
 
 const ReadBtn = styled.button`

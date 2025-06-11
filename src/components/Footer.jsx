@@ -40,7 +40,17 @@ const P = styled.p`
 const A = styled.a`
   margin-right: 10px;
   color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    color: #00a6ff;
+
+  }
 `;
+
+
 
 const Footer = () => {
   return (
@@ -57,10 +67,10 @@ const Footer = () => {
               Follow us on Social Media
               <br />
               <br />
-              <A href="">
-                <FaTelegram size={16} />
+              <A href="https://t.me/a_anvarbek">
+                <FaTelegram size={16}  />
               </A>
-              <A href="">
+              <A href="https://www.instagram.com/_next_page_devs/">
                 <FaInstagram size={16} />
               </A>
               <A href="">
@@ -75,9 +85,10 @@ const Footer = () => {
                 marginTop: "15px",
               }}
             >
-              Phone : <A href="">+(50) 7931 724 589</A>
+              Phone : <A href="tel:+998900500767">+998 (90) 050 07 67</A>
               <br />
-              <A href="">info@harvesterco.com</A>
+              <A href="https://t.me/NextPageDev">Our Telegram Channel</A>
+
             </P>
           </Contact>
 
