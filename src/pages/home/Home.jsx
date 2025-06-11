@@ -53,9 +53,9 @@ const Home = () => {
         <Title>HARVESTER COFFEE CO.</Title>
       </Wrapper>
 
-      {/* <Products />
+       <Products />
 
-      <AboutUs />
+      {/*<AboutUs />
 
       <ProductDetail />
 
