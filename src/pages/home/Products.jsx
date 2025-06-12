@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useNavigate } from "react-router";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 import Menu from "../../components/Menu";
@@ -76,6 +77,8 @@ const Button = styled.button`
 `;
 
 const Products = () => {
+  const navigate = useNavigate()
+
   return (
     <Wrapper>
       <Container>

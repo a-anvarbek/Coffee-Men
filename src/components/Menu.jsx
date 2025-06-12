@@ -12,14 +12,13 @@ const Container = styled.div`
   transition: all 0.5s ease;
   &:hover {
     transform: scale(1.05);
-
   }
 `;
 
 const Img = styled.img`
   width: 100%;
   height: 240px;
-  border-radius: 17px 17px 0 0;
+  border-radius: 20px 20px 0 0;
 `;
 
 const Div = styled.div`
@@ -27,7 +26,6 @@ const Div = styled.div`
   width: 124px;
   height: 28px;
   top: 19px;
-  background-color: #000;
   color: #fff;
   padding: 5px 10px;
 `;

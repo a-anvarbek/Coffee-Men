@@ -43,6 +43,11 @@ const Box = styled.div`
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 `;
 
 const Menu = () => {

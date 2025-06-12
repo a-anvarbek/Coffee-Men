@@ -8,6 +8,9 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
+
+  @media (max-width: 768px) {
+  }
 `;
 
 const Title = styled.p`
@@ -16,19 +19,23 @@ const Title = styled.p`
   width: calc(100% - 20%);
   margin: auto;
   font-weight: 700;
-    
-  transition: all 0.4s ease;
-    cursor: default;
-    text-shadow: 2px 2px 8px #f5c73d, 0.3;
 
-    &:hover {
-  background-image: linear-gradient(90deg, #f3cd5b, #f1bb1b, #f0ca59);
-  background-size: 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: textShine 2s linear infinite;
-  text-shadow: 2px 2px 10px #f3cd5b;
-}
+  transition: all 0.4s ease;
+  cursor: default;
+  text-shadow: 2px 2px 8px #f5c73d, 0.3;
+
+  &:hover {
+    background-image: linear-gradient(90deg, #f3cd5b, #f1bb1b, #f0ca59);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: textShine 2s linear infinite;
+    text-shadow: 2px 2px 10px #f3cd5b;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 const Div = styled.div`
@@ -38,6 +45,10 @@ const Div = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media (max-width: 768px) {
+    width: calc(100% - 20%);
+  }
 `;
 
 const P = styled.p`
@@ -46,17 +57,22 @@ const P = styled.p`
   text-align: left;
   margin-top: 20px;
   transition: all 0.4s ease;
-    cursor: default;
-    text-shadow: 2px 2px 8px #fffaeb, 0.3;
+  cursor: default;
+  text-shadow: 2px 2px 8px #fffaeb, 0.3;
 
-    &:hover {
-  background-image: linear-gradient(90deg, #f5f5f5, #b0afaf, #ffffff);
-  background-size: 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: textShine 2s linear infinite;
-  text-shadow: 2px 2px 10px #ffffff;
-}
+  &:hover {
+    background-image: linear-gradient(90deg, #f5f5f5, #b0afaf, #ffffff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: textShine 2s linear infinite;
+    text-shadow: 2px 2px 10px #ffffff;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+    text-align: center;
+  }
 `;
 
 const HomeProducts = () => {

@@ -55,11 +55,11 @@ const Home = () => {
 
        <Products />
 
-      {/*<AboutUs />
+      <AboutUs />
 
       <ProductDetail />
 
-      <ContactUs /> */}
+      <ContactUs />
     </>
   );
 };

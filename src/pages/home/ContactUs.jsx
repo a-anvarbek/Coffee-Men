@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { FaLongArrowAltRight } from "react-icons/fa";
-
 import BG from "../../image/ContactUs.jpg";
 
 const WrapperTop = styled.div`
@@ -9,12 +8,28 @@ const WrapperTop = styled.div`
   padding: 50px;
   background-color: #000;
   color: #fff;
+
+  @media (max-width: 768px) {
+    background-image: url(${BG});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 30px 20px;
+    height: auto;
+  }
 `;
 
 const WrapperBottom = styled.div`
   width: 100%;
   height: 400px;
   padding: 50px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+  }
 `;
 
 const Container = styled.div`
@@ -23,15 +38,28 @@ const Container = styled.div`
   height: 500px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 const DivL = styled.div`
   width: 520px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const DivR = styled.div`
   width: 440px;
   height: 402px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const P = styled.p`
@@ -56,11 +84,15 @@ const Button = styled.button`
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
   transition: all 0.5s ease;
   cursor: pointer;
+
   &:hover {
     transform: scale(1.08);
     background-color: white;
     color: #ffbf00;
+  }
 
+  @media (max-width: 768px) {
+    margin-top: 30px;
   }
 `;
 
@@ -73,6 +105,10 @@ const ContainerBottom = styled.div`
   width: 466px;
   margin: auto;
   text-align: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Input = styled.input`
@@ -83,6 +119,10 @@ const Input = styled.input`
   text-align: center;
   font-size: 18px;
   color: #afafaf;
+
+  @media (max-width: 768px) {
+    width: 60%;
+  }
 `;
 
 const SearchButton = styled.button`
@@ -97,6 +137,7 @@ const SearchButton = styled.button`
 const Div = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
 const ContactUs = () => {
@@ -125,7 +166,7 @@ const ContactUs = () => {
             </Button>
           </DivL>
           <DivR>
-            <Img src={BG} alt="" />
+            <Img src={BG} alt="Contact us" />
           </DivR>
         </Container>
       </WrapperTop>
