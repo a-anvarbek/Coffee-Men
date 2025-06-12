@@ -8,11 +8,19 @@ const Wrapper = styled.div`
   background-color: #000;
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 const Container = styled.div`
   width: 553px;
   margin: auto;
+
+  @media (max-width: 768px) {
+    margin-top: 150px;
+  }
 `;
 
 const Title = styled.p`
@@ -21,6 +29,10 @@ const Title = styled.p`
   width: calc(100% - 20%);
   margin: auto;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 const P = styled.p`

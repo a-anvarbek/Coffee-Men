@@ -6,6 +6,10 @@ const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
   padding: 50px;
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 const Container = styled.div`
@@ -13,15 +17,30 @@ const Container = styled.div`
   margin: auto;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 `;
 
 const DivL = styled.div`
   width: 480px;
   height: 600px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const DivR = styled.div`
   width: 569px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const Img = styled.img`
@@ -37,6 +56,10 @@ const P = styled.p`
   font-size: ${({ $fontSize }) => $fontSize || ""};
   font-weight: ${({ $fontWeight }) => $fontWeight || ""};
   margin: ${({ $margin }) => $margin || ""};
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 const Span = styled.span`
