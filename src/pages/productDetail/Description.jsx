@@ -51,6 +51,10 @@ const DivB = styled.div`
   padding-bottom: 25px;
   width: 956px;
   word-spacing: 3px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Box = styled.div`
@@ -58,6 +62,11 @@ const Box = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 100px 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 `;
 
 const DivL = styled.div`
@@ -68,6 +77,11 @@ const DivR = styled.div`
   width: calc(100% - 253px);
   display: flex;
   justify-content: space-between;
+ 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 `;
 
 const Description = () => {

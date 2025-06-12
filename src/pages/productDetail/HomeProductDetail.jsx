@@ -21,12 +21,22 @@ const Container = styled.div`
   margin: auto;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 `;
 
 const Div = styled.div`
   width: ${({ $width }) => $width || "590px"};
   height: 490px;
   margin-top: 50px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const Img = styled.img`
@@ -39,6 +49,10 @@ const P = styled.p`
   font-weight: ${({ $fontWeight }) => $fontWeight || ""};
   margin: ${({ $margin }) => $margin || ""};
   display: flex;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 const Box = styled.div`
