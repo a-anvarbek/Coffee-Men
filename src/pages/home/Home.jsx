@@ -59,7 +59,7 @@ const Home = () => {
 
       <ProductDetail />
 
-      {/* <ContactUs /> */}
+      <ContactUs />
     </>
   );
 };

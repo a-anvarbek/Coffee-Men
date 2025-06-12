@@ -85,7 +85,8 @@ const ProductDetail = () => {
               Transparency
             </P>
             <P $fontSize="18px" $margin="20px 0">
-              What we and our customers appreciate a lot about speciality coffee...
+              What we and our customers appreciate a lot about speciality
+              coffee...
             </P>
           </DitTop>
 
